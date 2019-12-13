@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+   <body>
+
+      <h2 style = "text-align: center;">メジャーリーガー年俸予測：Major League Annual Salary Forecast</h2>
+
+      {% for message in form.battingavg.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.OBR.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.run.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.hit.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+      
+      {% for message in form.double.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.triple.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.homerun.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.RBI.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.fourball.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.strikeout.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.stolen.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.error.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      <form action = "" method = post>
+         <fieldset>
+            <legend>あなたの成績を入力してください：Enter parameters here.</legend>
+
+            <div style = font-size:20px; font-weight:bold; margin-left:150px;>
+               {{ form.battingavg.label }}<br>
+               {{ form.battingavg }}
+               <br>
+               {{ form.OBR.label }}<br>
+               {{ form.OBR }}
+               <br>
+               {{ form.run.label }}<br>
+               {{ form.run }}
+               <br>
+               {{ form.hit.label }}<br>
+               {{ form.hit }}
+               <br>
+               {{ form.double.label }}<br>
+               {{ form.double }}
+               <br>
+               {{ form.triple.label }}<br>
+               {{ form.triple }}
+               <br>
+               {{ form.homerun.label }}<br>
+               {{ form.homerun }}
+               <br>
+               {{ form.RBI.label }}<br>
+               {{ form.RBI }}
+               <br>
+               {{ form.fourball.label }}<br>
+               {{ form.fourball }}
+               <br>
+               {{ form.strikeout.label }}<br>
+               {{ form.strikeout }}
+               <br>
+               {{ form.stolen.label }}<br>
+               {{ form.stolen }}
+               <br>
+               {{ form.error.label }}<br>
+               {{ form.error }}
+               <br>
+               {{ form.submit }}
+            </div>
+
+         </fieldset>
+      </form>
+
+   </body>
+</html>
